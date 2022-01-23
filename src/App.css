@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.page_wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main {
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: calc(100% - 100px);
+}

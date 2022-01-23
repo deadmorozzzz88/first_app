@@ -1,16 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
-import ProductCounter from "./ProductCounter";
+import MainPage from "./containers/MainPage";
+// import RegistrationPage from "./containers/RegistrationPage";
+// import ProductCounter from "./ProductCounter";
+// import Form from "./Form";
 
 const App = () => {
+  useEffect(() => {
+    console.log("App mount");
+  }, []);
+  // const [orangeCount, setOrangeCount] = useState(0);
+  // const [appleCount, setAppleCount] = useState(0);
   return (
-    <div className="App">
-      <ProductCounter product={{ productName: "Orange", count: 6 }} />
-      <ProductCounter product={{ productName: "Apple", count: 1 }} />
-      <ProductCounter product={{ productName: "Carrot", count: 9 }} />
-      <ProductCounter product={{ productName: "Pineapple", count: 4 }} />
-      <ProductCounter product={{ productName: "Tomato", count: 7 }} />
-    </div>
+    // <RegistrationPage />
+
+    <MainPage />
+
+    // <div className="App">
+    //   <ProductCounter
+    //     productName="Orange"
+    //     count={orangeCount}
+    //     setCount={setOrangeCount}
+    //   />
+    //   <ProductCounter
+    //     productName="Apple"
+    //     count={appleCount}
+    //     setCount={setAppleCount}
+    //   />
+
+    //   <Form />
+    // </div>
   );
 };
 
